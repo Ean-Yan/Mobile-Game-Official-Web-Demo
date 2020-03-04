@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>CSS and Specificity</title>
+        <link rel="stylesheet" href="styles.css"
+    </head>
+    <body>
+        
+        <p>
+            Order of style importance
+        </p>
+        <p>1. Brower's default styles</p>
+        <p>2. Any imported styles and style sheets</p>
+        <p>
+            Styles that are imported later take preference
+        </p>
+        <p>3. Specificity score</p>
+
+        <p>
+            (A, B, C)<br>
+            A => Count of ID selectors <br>
+            B => Count of class, psuedo class and attritube selectors <br>
+            C => Count of type selectors
+        </p>
+
+        <p>
+            * => (0,0,0) => 0 <br>
+            li => (0,0,1) => 1 <br>
+            ul li => (0,0,2) => 2 <br>
+            li.red => (0,1,1) => 11 <br>
+            #content => (1,0,0) => 100 <br>
+        </p>
+
+        <ul>
+            <li>
+                <a href="www.google.com">Test</a>
+            </li>
+            <li>
+                <a href="www.baidu.com">Test</a>
+            </li>
+            <li>
+                <a href>Test</a>
+            </li>
+            <li>
+                <a href>Test</a>
+            </li>
+        </ul>
+
+    </body>
+</html>

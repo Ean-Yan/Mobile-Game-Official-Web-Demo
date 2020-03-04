@@ -1,0 +1,44 @@
+.cool-beans > h1{
+    display: flex;
+}
+
+[id]{
+    display: block;
+}
+
+div:first-child{
+    color: rgb(215, 250, 236);
+}
+
+
+ul{
+    list-style-type: none;
+    background-color: aqua;
+}
+
+ul li{
+    background-color: chocolate;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+p {
+    border: lightgrey, solid, 2px;
+}
+
+a{
+    color: black;
+}
+a:visited{
+    color: white;
+}
+/*
+.means class selector
+nothing means tag selector
+[]means attribute selector
+#means id selector
+: pseudo class selector
+*/

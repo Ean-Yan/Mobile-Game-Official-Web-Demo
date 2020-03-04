@@ -1,0 +1,44 @@
+.container div:nth-child(1){
+    background-color: aqua;
+    height: 50px;
+    order: 3;
+}
+.container div:nth-child(2){
+    background-color: aquamarine;
+    height: 100px;
+    order: 2;
+}
+.container div:nth-child(3){
+    background-color: azure;
+    height: 200px;
+    order:3;
+}
+.container div:nth-child(4){
+    background-color: beige;
+    height: 300px;
+}
+.container div:nth-child(5){
+    background-color: bisque;
+    height: 250px;
+}
+.container div:nth-child(6){
+    background-color: black;
+    height: 350px;
+    order: -1;
+}
+.container div{
+    width: 50px;
+    padding: 50px;
+    margin:5px;
+    color: crimson;
+    text-align:center;
+    font-size: 50pt;
+    font-weight: bolder;
+}
+.container{
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}

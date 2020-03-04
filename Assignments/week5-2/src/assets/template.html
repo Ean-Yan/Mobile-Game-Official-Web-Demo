@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Canvas and Events</title>
+
+        <style>
+        .container {
+            display: flex;
+            flex-direction: row
+        }
+
+        .canvas {
+            margin-right: 10px;
+        }
+
+        .color-container{
+            display: flex;
+            flex-flow:column wrap;
+            align-content: space-around;
+            height: 75px;
+            width: 80px;
+            padding-right: 20px;
+        }
+        .color-container>div{
+
+            width: 20px;
+            height: 20px;
+            margin: 5px;
+        }
+        #green{
+            background-color: green;
+        }
+        #blue{
+            background-color: blue;
+        }
+        #red{
+            background-color: red;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+        #orange{
+            background-color: orange;
+        }
+        #black{
+            background-color: black;
+        }
+        #white{
+            background-color: white;
+            border: solid;
+            width: 20px;
+            height: 20px;
+            margin: 5px;
+        }
+        img{
+            margin-left: 10px;
+        }
+        canvas{
+            border: 2px solid;
+            
+        }
+        </style>
+    </head>
+    <body class="container">
+        <div class="canvas">
+            <div>
+                <canvas id="canvas" width="400" height="400"></canvas>
+            </div>
+            <div>
+                <input type="button" value="save" id="save">
+                <input type="button" value="clear" id="clear">
+            </div>
+        </div>  
+        <div>
+            <div>Choose Color</div>
+            <div class="color-container">
+                <div id="green" class="color-item"></div>
+                <div id="blue" class="color-item"></div>
+                <div id="red" class="color-item"></div>
+                <div id="yellow" class="color-item"></div>
+                <div id="orange" class="color-item"></div>
+                <div id="black" class="color-item"></div>
+            </div>
+        </div>
+        <div>
+            <div>Eraser</div>
+            <div id="white" class="color-item"></div>
+        </div>
+        <img id="canvasimg" style="display:none">      
+    </body>
+</html>

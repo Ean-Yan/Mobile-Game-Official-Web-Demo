@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>TypeScript and Async</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <script type="text/template" id="table-template">
+            <tr>
+                <td>{{id}}</td>
+                <td>{{name}}</td>
+                <td>{{username}}</td>
+                <td>{{email}}</td>
+                <td>{{address}}</td>
+                <td>{{phone}}</td>
+                <td>https://{{website}}</td>
+                <td>{{company}}</td>
+                <td><img src="{{avatar}}"></td>
+            </tr>
+        </script>
+        <div class="container-fluid">
+            <br>
+            <button id="populate" class="btn btn-primary">Populate Data</button>
+            <br>
+            <br>
+            <table class="table table-bordered table-stripted">
+                <thead>
+                    <tr>
+                        <th class="text-center">ID</th>
+                        <th class="text-center">NAME</th>
+                        <th class="text-center">USERNAME</th>
+                        <th class="text-center">EMAIL</th>
+                        <th class="text-center">ADDRESS</th>
+                        <th class="text-center">PHONE</th>
+                        <th class="text-center">WEBSITE</th>
+                        <th class="text-center">COMPANY</th>
+                        <th class="text-center">AVATAR</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Tags and Entities</title>
+    <style>
+    h1{
+        background-color: #FF5733;
+        color:rgb(255,255,255);
+    }
+    img{
+        width: 200px;
+    }
+    video{
+        width: 200px;
+    }
+
+    .cool-class{
+        color: aqua;
+    }
+    </style>
+    </head>
+    <body>
+        <h1>HTML Entities</h1>
+        Entity: &larr; HTML Code: &#8592;HEX code: &#x2190;<br>
+        &lt;h1&gt;&lt;/h1&gt; <br>
+
+        <h1 id="media-tag" class="cool-class">Media Tags</h1>
+
+        <h3 class="cool-class">iframe</h3>
+
+        <iframe src="./assests/content.html" frameborder = "1"   ></iframe>
+
+        <h3>object</h3>
+
+        <object data="./assests/chicken.pdf" type = "application/pdf">
+           <embed  data="./assests/chicken.pdf" type = "application/pdf">
+        </object>
+        
+        <h3>audio</h3>
+       
+        <audio controls>
+            <source src="./assests/horse.mp3">
+                Your browser doesn't support the audio tag.    
+        </audio>
+       
+        <h3>video</h3>
+        
+        <video src="assests/small.mp4" controls></video>
+        
+        <h3>image</h3>
+
+        <img src="./assests/birdvader-small.png" alt="Bird Vader">
+
+        <nav>Nav tag</nav>
+        <menu>Menu tag</menu>
+        <div>Div tag</div>
+        <span>Span tag</span>
+        <div><span>span in div</span></div>
+
+    </body>
+</html>
